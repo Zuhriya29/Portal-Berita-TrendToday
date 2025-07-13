@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.utama-pi {
+    margin: 0 auto;
+}
+
+.utama-pi h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin: 2.5rem;
+    font-size: 1.7em;
+}
+
+.tambah-iklan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid #145B73;
+    border-radius: 10px;
+    width: 80vw;
+    height: 15rem;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+
+.tambah-iklan p {
+    font-family: 'Inter', serif;
+    font-weight: bold;
+    color: #145B73;
+    margin-top: 1rem;
+}
+
+.tambah-iklan:hover {
+    background-color: #BCE2EF;
+    cursor: pointer;
+}
+
+.tambah-iklan:active {
+    box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-pi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50vw;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+
+.search-pi p {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.search-pi svg {
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.search-pi:hover {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-pi:active {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-input-pi {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    font-size: 0.8em;
+    padding-left: 1rem;
+}
+
+.search-input-pi::placeholder {
+    color: #888;
+}
+
+.radio-group-pi {
+    display: flex;
+    margin-left: 0;
+}
+
+.radio-buttons-pi {
+    display: flex;
+    gap: 1.5rem;
+    /* Beri jarak antara radio button */
+}
+
+.radio-buttons-pi label {
+    font-family: 'Inter', serif;
+}
+
+.radio-buttons-pi input[type="radio"] {
+    width: 1rem;
+    /* Pastikan ukuran proporsional */
+    height: 1rem;
+    /* Ukuran harus sama agar tetap bulat */
+    appearance: none;
+    /* Hilangkan default radio button */
+    border: 2px solid #145B73;
+    /* Warna border */
+    border-radius: 50%;
+    /* Pastikan bentuknya bulat */
+    outline: none;
+    /* Hilangkan efek default */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+}
+
+.radio-buttons-pi input[type="radio"]:checked {
+    background-color: #145B73;
+    /* Warna saat dipilih */
+}
+
+.radio-buttons-pi input[type="radio"]::after {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    /* Warna titik tengah */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    /* Default tersembunyi */
+}
+
+.radio-buttons-pi input[type="radio"]:checked::after {
+    display: block;
+    /* Munculkan titik saat dipilih */
+}
+
+.elemen-iklan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .elemen-iklan:hover img, 
+  .elemen-iklan:hover .detail-iklan-bawah {
+      box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+  }
+
+  .elemen-iklan:active img, 
+  .elemen-iklan:active .detail-iklan-bawah {
+      box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+  }
+
+  .elemen-iklan img {
+    width: 95%;
+    height: 10rem;
+    border-radius: 5px 5px 0px 0px;
+    object-fit: cover; /* Gambar akan menyesuaikan tanpa distorsi */
+    object-position: center; /* Menjaga fokus di tengah gambar */
+  }
+
+  .elemen-iklan h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em !important;
+    font-family: 'Lora', serif !important;
+    font-weight: bold !important;
+    margin: 1rem auto;
+  }
+  
+  .detail-iklan-bawah {
+      background-color: #BCE2EF;
+      border-radius: 0px 0px 5px 5px;
+      width: 95%;
+      height: 5.5rem;
+  }
+
+  .detail-iklan-depan{
+    display: flex;
+    justify-content: space-between;
+    font-family: "inter", serif;
+    font-size: 0.8em;
+    padding-right: 1rem;
+  }
+
+  .icon-validasi-iklan-depan {
+    display: flex;
+    padding-left: 1rem;
+    width: 50%;
+}
+
+.icon-validasi-iklan-depan p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    margin-left: 5px;
+    font-family: 'Inter', serif;
+}
+
+.lama-iklan {
+    text-align: right;
+    font-family: 'Inter', serif;
+    font-size: 0.7em;
+}
+
+  /* === Tablet === */
+@media (max-width: 1023px) {
+    
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.search-pi {
+    width: 80vw;
+}
+
+.radio-buttons-pi {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-bottom: 1rem;
+    /* Beri jarak antara radio button */
+}
+
+.radio-buttons-pi label {
+    font-size: 0.85em;
+}
+
+}

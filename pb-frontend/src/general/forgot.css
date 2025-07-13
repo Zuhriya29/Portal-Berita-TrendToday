@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.utama-fp {
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto;
+    background-color: #BCE2EF;
+    width: 70vw;
+    padding: 5vw;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.utama-fp h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    padding-bottom: 3.5rem;
+    font-size: 2em;
+}
+
+.utama-fp p {
+    font-family: 'Inter', serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 8vw;
+    font-size: 1em;
+    padding-top: 2rem;
+}
+
+.utama-fp input {
+    width: 50vw;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.utama-fp input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 0.8em;
+}
+
+.utama-fp button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #145B73;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15vw;
+    height: 3.5rem;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin: 3rem auto;
+}
+
+.utama-fp button:hover {
+    background-color: #033444;
+}
+
+.utama-fp button:active {
+    background-color: #033444 !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.utama-fp label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+.utama-pb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15vh auto;
+    background-color: #BCE2EF;
+    width: 70vw;
+    padding: 5vw;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.utama-pb h2 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.utama-pb Form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.utama-pb input {
+    height: 3.5rem;
+}
+
+.utama-pb input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 0.8em;
+}
+
+.utama-pb button {
+    background-color: #145B73;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15vw;
+    height: 3.5rem;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.utama-pb button:hover {
+    background-color: #033444;
+}
+
+.utama-pb button:active {
+    background-color: #033444 !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.utama-pb label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+
+.kembali-fp {
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    position: absolute;
+    /* Agar elemen keluar dari aliran normal */
+    top: 0;
+    /* Sesuaikan agar tidak tertutup Navbar */
+    left: 0;
+    /* Posisi di sisi kanan */
+    z-index: 1000;
+}
+
+.kembali-fp svg {
+    margin-right: 2vh;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-fp p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-fp p:hover {
+    color: #145B73;
+}
+
+.ulang-otp {
+    font-weight: 600;
+    font-family: 'Inter', serif;
+}
+
+.ulang-otp:hover {
+    color: #145B73;
+    text-decoration: underline;
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+
+    .utama-fp h2 {
+        padding-top: 2rem;
+        padding-bottom: 2.8rem;
+        font-size: 1.3em;
+    }
+
+    .utama-fp input {
+        height: 3rem;
+    }
+
+    .utama-fp input::placeholder {
+        font-size: 0.625em;
+    }
+
+    .utama-fp button {
+        width: 30vw;
+        height: 3rem;
+    }
+
+    .utama-pb h2 {
+        padding-bottom: 2.5rem;
+        padding-top: 1.5rem;
+        font-size: 1.3em;
+    }
+
+    .utama-pb input {
+        height: 3rem;
+    }
+
+    .utama-pb input::placeholder {
+        font-size: 0.625em;
+    }
+
+    .utama-pb button {
+        width: 30vw;
+        height: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .utama-pb label {
+        font-size: 0.8em;
+    }
+
+
+    .kembali-fp {
+        font-size: 0.8em;
+    }
+
+    .kembali-fp svg {
+        margin-right: 0.5rem;
+        /* Beri jarak antara ikon dan teks */
+    }
+}

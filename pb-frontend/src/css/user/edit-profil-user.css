@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.kembali-epu {
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    /* Agar elemen keluar dari aliran normal */
+    top: 0;
+    /* Sesuaikan agar tidak tertutup Navbar */
+    left: 0;
+    /* Posisi di sisi kanan */
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.kembali-epu svg {
+    margin-right: 0.5rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-epu p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-epu:hover {
+    color: #145B73;
+}
+
+.utama-epu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh auto;
+    background-color: #BCE2EF;
+    width: 70vw;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.utama-epu h2 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5em !important;
+}
+
+.utama-epu Form {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.check-admin .form-check-input {
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.check-admin .form-check-input label {
+    margin-left: 1rem;
+}
+
+.check-admin .form-check-input:checked {
+    background-color: #145B73;
+}
+
+.utama-epu input {
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', serif;
+}
+
+.utama-epu input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 0.75em;
+}
+
+.utama-epu button {
+    background-color: #145B73;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15vw;
+    height: 2.5rem;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    font-size: 1em !important;
+}
+
+.utama-epu button:hover {
+    background-color: #033444;
+}
+
+.utama-epu label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 0.9em !important;
+}
+
+.form-detail-user-epu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.form-one-epu {
+    width: 30vw;
+}
+
+.form-one-epu input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 0.7em;
+}
+
+
+/* Menghilangkan spinner di Chrome, Safari */
+.form-one-epu input[type="number"]::-webkit-outer-spin-button,
+.form-one-epu input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.radio-group {
+    display: flex;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 3.5rem;
+    /* Beri jarak antara radio button */
+}
+
+.radio-buttons input[type="radio"] {
+    width: 1.2rem;
+    /* Pastikan ukuran proporsional */
+    height: 1.2rem;
+    /* Ukuran harus sama agar tetap bulat */
+    appearance: none;
+    /* Hilangkan default radio button */
+    border: 2px solid #145B73;
+    /* Warna border */
+    border-radius: 50%;
+    /* Pastikan bentuknya bulat */
+    outline: none;
+    /* Hilangkan efek default */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+}
+
+.radio-buttons input[type="radio"]:checked {
+    background-color: #145B73;
+    /* Warna saat dipilih */
+}
+
+.radio-buttons input[type="radio"]::after {
+    content: "";
+    width: 0.55rem;
+    height: 0.55rem;
+    background-color: white;
+    /* Warna titik tengah */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    /* Default tersembunyi */
+}
+
+.radio-buttons input[type="radio"]:checked::after {
+    display: block;
+    /* Munculkan titik saat dipilih */
+}
+
+.ubah-password-epu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    line-height: 1;
+    gap: 1rem;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.ubah-password-epu p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.ubah-password-epu:hover {
+    color: #145B73;
+    text-decoration: underline;
+}
+
+.button-epu {
+    width: 10rem !important;
+    cursor: pointer !important;
+}
+
+.button-epu:active {
+    background-color: #145B73 !important;
+    
+}
+
+@media (max-width: 768px) {
+    .form-detail-user-epu {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-one-epu {
+        width: 60vw;
+    }
+
+    .utama-epu {
+        display: flex;
+        justify-content: center;
+        margin: 10vh auto;
+        width: 80vw;
+    }
+
+    .utama-epu input {
+        width: 60vw;
+    }
+
+    .ubah-password-epu {
+        margin: 30px auto;
+    }
+
+    .radio-buttons {
+    display: flex;
+    gap: 10px;
+    /* Beri jarak antara radio button */
+}
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.nav-2{
+    background-color: #145B73 !important;
+    color: white;
+}
+
+.text2{
+    padding-left: 50px;
+    font-family: "Lora", serif;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.list2 {
+    background-color:  #145B73;
+    padding-bottom: 20px;
+    width: 350px;
+    display: flex; /* WAJIB agar flexbox berfungsi */
+    flex-direction: column;
+    align-items: center; /* Memposisikan elemen di tengah secara vertikal */
+    justify-content: center; /* Memposisikan elemen di tengah secara horizontal */
+    border-radius: 0 0 0 5px;
+    margin-right: 0;
+    position: absolute; /* Agar elemen keluar dari aliran normal */
+    top: 50px; /* Sesuaikan agar tidak tertutup Navbar */
+    right: 0; /* Posisi di sisi kanan */
+    z-index: 1000; /* Pastikan lebih tinggi dari elemen lain */
+  }
+  
+  .sidebar2 .elemen2 {
+    width: 230px;
+    padding:10px;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Pusatkan teks secara horizontal */
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .elemen2:hover{
+    background-color: #BCE2EF;
+    cursor: pointer;
+    transition: 0.3s ease-in-out; /* Animasi halus */
+    }
+    .elemen2:active{
+    background-color: #BCE2EF;
+    }
+
+    .elemen-logout-2 {
+      padding: 0 !important;
+      padding-top: 10px !important;
+    }
+
+    .elemen-logout-2:hover {
+      background-color: rgb(216, 8, 8) !important; /* Warna merah saat hover */
+      color: white !important; /* Warna teks putih agar kontras */
+      transition: 0.3s ease-in-out; /* Animasi halus */
+      cursor: pointer;
+    }
+
+.sidebar2 #active {
+    background-color: #BCE2EF;
+}
+
+.elemen2 a {
+  text-decoration: none;  /* Menghilangkan garis bawah */
+  color: inherit;  /* Menggunakan warna teks default */
+  font-family: "Inter", sans-serif;
+}
+
+.elemen2 a p {
+  margin: 0;  /* Menghapus margin bawaan */
+  width: 230px;
+  height:100%;
+}

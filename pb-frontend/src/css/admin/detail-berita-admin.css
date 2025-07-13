@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.utama-dba {
+    margin: 0 auto;
+}
+
+.kembali-dba{
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.kembali-dba svg{
+    margin-right: 8px;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-dba p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-dba:hover {
+    color: #145B73;
+    cursor: pointer;
+}
+
+.utama-dba h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin: 25px;
+    font-size: 1.7em;
+}
+
+/* Container untuk gambar & upload */
+.gambar-detail-berita-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid #145B73;
+    border-radius: 10px;
+    width: 80vw;
+    height: 35vh;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+    /* margin-top: 10px; */
+    overflow: hidden;
+}
+
+/* Style gambar */
+.gambar-berita-admin {
+    width: 80vw;
+    height: 35vh;;
+}
+
+.gambar-detail-berita-admin img {
+    max-width: 80vw;
+    max-height: 50vh;
+    object-fit: cover; /* Gambar akan menyesuaikan tanpa distorsi */
+    object-position: center; /* Menjaga fokus di tengah gambar */
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Input file yang tersembunyi awalnya */
+.gambar-berita-upload {
+    position: absolute;
+    top: 38vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6); /* Overlay transparan */
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Input file tampil di tengah saat hover */
+.gambar-upload-container:hover .gambar-berita-upload {
+    opacity: 1;
+}
+
+/* Style input file */
+.gambar-berita-upload input[type="file"] {
+    width: 30vw;
+    height: 40px;
+    background: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.utama-judul-kategori-dba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.form-one-dba {
+    width: 38vw;
+    
+}
+
+.form-one-dba label {
+    font-weight: bold;
+}
+
+.form-one-dba input {
+    border: 1px solid #145B73;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-one-dba select {
+    border: 1px solid #145B73;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-one-dba input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 1em;
+    color: rgb(56, 54, 54);
+}
+
+.form-one-dba option {
+    font-family: 'Inter', serif;
+    font-size: 1em;
+}
+
+.form-one-dba input,
+.form-one-dba select,
+.form-text {
+    font-family: 'Inter', serif !important;
+}
+
+.utama-text-berita {
+    margin: 15px 20px;
+}
+
+.utama-text-berita label{
+    font-weight: bold;
+}
+
+.form-text {
+    border: 1px solid #145B73 !important;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-text::placeholder {
+    font-family: 'Inter', serif !important;
+    font-size: 1em;
+    color: rgb(56, 54, 54) !important;
+}
+
+.button-dba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.button-dba button{
+    background-color: #145B73 !important;
+    color: white;
+    border: none;
+    border-radius: 10px !important;
+    cursor: pointer;
+    width: 250px;
+    height: 45px;
+    font-family: 'Lora', serif !important;
+    font-weight: bold !important;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin: 30px 0px;
+    border: none !important;
+}
+
+.button-dba button:hover{
+    background-color: #033444 !important;
+}
+
+.button-dba button:active{
+    box-shadow: inset 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+}

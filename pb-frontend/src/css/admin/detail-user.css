@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.kembali-du {
+    display: flex;
+    align-items: center; /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black; /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    position: absolute; /* Agar elemen keluar dari aliran normal */
+    top: 0; /* Sesuaikan agar tidak tertutup Navbar */
+    left: 0; /* Posisi di sisi kanan */
+    z-index: 1000;
+}
+
+.kembali-du svg {
+    margin-right: 0.8rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-du p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-du p:hover {
+    color: #145B73;
+}
+
+.utama-du {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15vh auto;
+    background-color: #BCE2EF;
+    width: 70vw;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.utama-du h2 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    font-size: 1.5em !important;
+}
+
+.utama-du Form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.utama-du input {
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', serif;
+}
+
+.utama-du input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 0.7em;
+}
+
+.utama-du label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 1em !important;
+}
+
+.form-detail-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-one-du {
+    width: 24.5vw;
+}
+
+.form-one-du input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 0.7em;
+}
+
+
+/* Menghilangkan spinner di Chrome, Safari */
+.form-one-du input[type="number"]::-webkit-outer-spin-button,
+.form-one-du input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.radio-group {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.radio-buttons-du {
+    display: flex;
+    gap: 1.5rem; /* Beri jarak antara radio button */
+}
+
+.radio-buttons-du input[type="radio"] {
+    width: 1rem;  /* Pastikan ukuran proporsional */
+    height: 1rem; /* Ukuran harus sama agar tetap bulat */
+    appearance: none; /* Hilangkan default radio button */
+    border: 2px solid #145B73; /* Warna border */
+    border-radius: 50%; /* Pastikan bentuknya bulat */
+    outline: none; /* Hilangkan efek default */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+}
+
+.radio-buttons-du input[type="radio"]:checked {
+    background-color: #145B73; /* Warna saat dipilih */
+}
+
+.radio-buttons-du input[type="radio"]::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: white; /* Warna titik tengah */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Default tersembunyi */
+}
+
+.radio-buttons-du input[type="radio"]:checked::after {
+    display: block; /* Munculkan titik saat dipilih */
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+    
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.form-detail-user {
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+}
+
+.form-one-du {
+    width: 60vw;
+}
+
+}

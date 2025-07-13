@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.utama-di {
+    margin: 0 auto;
+}
+
+.kembali-di{
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+
+.kembali-di svg{
+    margin-right: 0.8em;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-di p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-di:hover {
+    color: #145B73;
+    cursor: pointer;
+}
+
+.utama-di h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin: 2.5rem;
+    font-size: 1.7em;
+}
+
+.gambar-iklan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid #145B73;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gambar-iklan img {
+    max-width: 80vw;
+    max-height: 50vh;
+    object-fit: cover; /* Gambar akan menyesuaikan tanpa distorsi */
+    object-position: center; /* Menjaga fokus di tengah gambar */
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.utama-nama-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-nama-brand input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    border: 1px solid #145B73;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-nama-brand label {
+    font-weight: bold;
+    font-family: 'Inter', serif;
+    font-size: 1em;
+}
+
+.form-nama-brand input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 1em;
+    color: rgb(56, 54, 54);
+}
+
+.utama-form-di {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    width: 80vw;
+}
+
+.form-one-di {
+    width: 38vw;
+    
+}
+
+.form-one-di label {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.form-one-di input {
+    border: 1px solid #145B73;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-one-di select {
+    border: 1px solid #145B73;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-one-di input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 1em;
+    color: rgb(56, 54, 54);
+}
+
+.form-one-di option {
+    font-family: 'Inter', serif;
+    font-size: 1em;
+}
+
+.form-one-ti input,
+.form-one-ti select,
+.form-nama-brand input {
+    font-family: 'Inter', serif !important;
+}
+
+.button-di {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.no-danger-di {
+    background-color: #145B73 !important;
+    color: white;
+    border: none;
+    border-radius: 10px !important;
+    cursor: pointer;
+    width: 15vw;
+    height: 2.5rem;
+    font-family: 'Lora', serif !important;
+    font-weight: bold !important;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin: 50px 0px;
+    border: none !important;
+}
+
+.no-danger-di:hover{
+    background-color: #033444 !important;
+}
+
+.no-danger-di:active{
+    box-shadow: inset 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.danger-di{
+    background-color: rgb(190, 7, 7) !important;
+    color: white;
+    border: none;
+    border-radius: 10px !important;
+    cursor: pointer;
+    width: 15vw;
+    height: 2.5rem;
+    font-family: 'Lora', serif !important;
+    font-weight: bold !important;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin: 5rem 0px;
+    border: none !important;
+}
+
+.danger-di:hover {
+    background-color: rgb(151, 5, 5) !important;
+}
+
+.danger-di:active {
+    box-shadow: inset 3px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.danger-di{
+    width: 30vw;
+    height: 2.5rem;
+}
+
+.no-danger-di {
+    width: 30vw;
+    height: 2.5rem;
+}
+
+.utama-form-di {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-one-di {
+    width: 80vw;
+    margin-bottom: 1rem;
+}
+}

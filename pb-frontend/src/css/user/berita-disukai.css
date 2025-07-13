@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.utama-bd {
+    margin: 0 auto;
+}
+
+.utama-bd h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin: 2.5rem;
+    font-size: 1.7em;
+}
+
+.search-bd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50vw;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+
+.search-bd p {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.search-bd svg {
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.search-bd:hover {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-bd:active {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-input-bd {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    font-size: 0.85em;
+    padding-left: 1rem;
+}
+
+.search-input-bd::placeholder {
+    color: #888;
+}
+
+.elemen-berita-bd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.elemen-berita-bd:hover img,
+.elemen-berita-bd:hover .detail-berita-bawah-bd {
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.elemen-berita-bd:active img,
+.elemen-berita-bd:active .detail-berita-bawah-bd {
+    box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.elemen-berita-bd img {
+    width: 95%;
+    height: 10rem;
+    border-radius: 5px 5px 0px 0px;
+    object-position: center;
+    /* Menjaga fokus di tengah gambar */
+    object-fit: cover !important;
+}
+
+.elemen-berita-bd h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em !important;
+    font-family: 'Lora', serif !important;
+    font-weight: bold !important;
+    margin: 0px auto;
+}
+
+.detail-berita-bawah-bd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-color: #BCE2EF;
+    border-radius: 0px 0px 5px 5px;
+    width: 95%;
+    height: 9rem;
+    padding: 0px 10px 0px 10px;
+}
+
+.detail-berita-depan-bd {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.icon-validasi-berita-depan-bd {
+    display: flex;
+}
+
+.icon-validasi-berita-depan-bd p {
+    font-size: 0.7em;
+    margin-left: 5px;
+    font-family: 'Inter', serif;
+}
+
+.penulis-berita-depan-bd {
+    text-align: right;
+    font-family: 'Inter', serif;
+    font-size: 0.7em;
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.search-bd {
+    width: 80vw;
+}
+}

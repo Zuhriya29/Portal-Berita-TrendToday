@@ -1,0 +1,50 @@
+.button-dk-utama {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Pastikan elemen mengambil seluruh lebar */
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.button-danger-dk, .button-dk{
+    color: white;
+    border: none !important;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15vw;
+    height: 45px;
+    font-family: 'Lora', serif Impo !important;
+    font-weight: bold !important;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.button-dk {
+    background-color: #145B73 !important;
+}
+
+.button-dk:hover {
+    background-color: #033444 !important;
+}
+
+.button-dk:active {
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button-danger-dk {
+    background-color: rgb(216, 8, 8) !important;
+}
+
+.button-danger-dk:hover {
+    background-color: rgb(151, 2, 2) !important;
+}
+
+.button-danger-dk:active {
+    background-color: rgb(151, 2, 2) !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.button-dk:active {
+    background-color: #033444 !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
+}

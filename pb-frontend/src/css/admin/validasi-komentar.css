@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.utama-validasi-komentar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.utama-validasi-komentar h1 {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  margin: 2.5rem;
+  font-size: 1.7em;
+}
+
+.search-validasi-komentar {
+  width: 50%;
+  height: 3rem;
+  margin-top: 1.5rem;
+  border-radius: 25px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: white;
+  position: relative;
+}
+
+.search-validasi-komentar p {
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.search-validasi-komentar svg {
+  margin: 0;
+  margin-left: 1.5rem;
+}
+
+.search-validasi-komentar:hover {
+  cursor: pointer;
+  border: 1px solid #145B73;
+  color: #145B73;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-validasi-komentar:active {
+  cursor: pointer;
+  border: 1px solid #145B73;
+  color: #145B73;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 0.85rem;
+  padding-left: 1rem;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.radio-group-vk {
+  display: flex;
+  margin-left: 0;
+}
+
+.radio-buttons-vk {
+  display: flex;
+  gap: 1.5rem;
+  /* Beri jarak antara radio button */
+}
+
+.radio-buttons-vk label {
+  font-family: 'Inter', serif;
+}
+
+.radio-buttons-vk input[type="radio"] {
+  width: 1rem;
+  /* Pastikan ukuran proporsional */
+  height: 1rem;
+  /* Ukuran harus sama agar tetap bulat */
+  appearance: none;
+  /* Hilangkan default radio button */
+  border: 2px solid #145B73;
+  /* Warna border */
+  border-radius: 50%;
+  /* Pastikan bentuknya bulat */
+  outline: none;
+  /* Hilangkan efek default */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+
+.radio-buttons-vk input[type="radio"]:checked {
+  background-color: #145B73;
+  /* Warna saat dipilih */
+}
+
+.radio-buttons-vk input[type="radio"]::after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  /* Warna titik tengah */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  /* Default tersembunyi */
+}
+
+.radio-buttons-vk input[type="radio"]:checked::after {
+  display: block;
+  /* Munculkan titik saat dipilih */
+}
+
+.elemen-komentar-validasi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.elemen-komentar-validasi:hover img,
+.elemen-komentar-validasi:hover .validasi-komentar-bawah {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.elemen-komentar-validasi:active img,
+.elemen-komentar-validasi:active .validasi-komentar-bawah {
+  box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.elemen-komentar-validasi img {
+  width: 100%;
+  height: 10rem;
+  border-radius: 5px 5px 0px 0px;
+  object-position: center;
+  /* Menjaga fokus di tengah gambar */
+  object-fit: cover !important;
+}
+
+.elemen-komentar-validasi h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1em !important;
+  font-family: 'Lora', serif !important;
+  font-weight: bold !important;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+.validasi-komentar-bawah {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0px auto;
+  background-color: #BCE2EF;
+  border-radius: 0px 0px 5px 5px;
+  width: 100%;
+  height: 9rem;
+  padding: 0px 10px;
+}
+
+.detail-validasi-komentar-depan {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0px 10px;
+}
+
+.icon-validasi-komentar-depan {
+  display: flex;
+  justify-content: start;
+}
+
+.icon-validasi-komentar-depan p {
+  font-size: 0.7em;
+  margin-left: 5px;
+  font-family: 'Inter', serif;
+}
+
+.penulis-validasi-komentar-depan {
+  text-align: right;
+  font-family: 'Inter', serif;
+  font-size: 0.7em;
+}
+
+  /* === Tablet === */
+@media (max-width: 1023px) {
+    
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.search-validasi-komentar {
+  width: 80vw;
+}
+
+.radio-buttons-vk {
+  display: flex;
+  gap: 1rem;
+  /* Beri jarak antara radio button */
+}
+
+.radio-buttons-vk label {
+  font-size: 0.85em;
+}
+
+.validasi-komentar-bawah {
+  height: 6.5rem;
+}
+}

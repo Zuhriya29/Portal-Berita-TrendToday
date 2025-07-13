@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.atas-lihat-berita-admin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kembali-lba, .icon-lihat-berita-admin{
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    border: none !important;
+}
+
+.kembali-lba svg, .icon-lihat-berita-admin svg{
+    margin-right: 0.8rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-lba p, .icon-lihat-berita-admin p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.icon-lihat-berita-admin p {
+    text-decoration: none;
+}
+
+.kembali-lba:hover {
+    color: #145B73;
+    cursor: pointer;
+}
+
+.icon-lihat-berita-admin:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.judul-detail-lba-1  {
+    flex-direction: column;
+}
+
+.judul-detail-lba-2 {
+    font-family: 'Lora', serif !important;
+    font-size: 2em;
+    font-weight: bold;
+     margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.penulis-detail-lba {
+    font-family: 'Inter', serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+}
+
+.judul-detail-lba-1 img {
+    width: 100vw;
+    height: 30rem;
+    object-fit: cover; /* Gambar akan menyesuaikan tanpa distorsi */
+    object-position: center; /* Menjaga fokus di tengah gambar */
+}
+
+.isi-berita-lba {
+    padding: 2.5rem 3rem;
+    font-family: 'Inter', serif;
+}
+
+.isi-berita-lba img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 60vw;
+    height: auto;
+    object-fit: cover; /* Gambar akan menyesuaikan tanpa distorsi */
+    object-position: center; /* Menjaga fokus di tengah gambar */
+    border-radius: 15px;
+}
+
+.komentar-lba {
+    padding: 0px 8rem;
+}
+
+.komentar-lba h1 {
+    font-size: 1.8em !important;
+    font-weight: bold;
+    font-family: 'Inter', serif;
+    text-align : center;
+    padding-bottom : 3rem;
+}
+
+.komentar-dvk-2 {
+    font-family: 'Inter', serif;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    height: 5rem;
+    background-color: #BCE2EF;
+    padding: 1.5rem;
+    margin: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.text-komentar {
+    font-weight: bold;
+    font-family: 'Inter', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.custom-pagination .page-link {
+    font-weight: bold;
+    font-family: 'Inter', serif;
+    color: #145B73;
+    border-color: #145B73;
+    margin: 0px 10px;
+    border-radius: 10px;
+  }
+  
+  .custom-pagination .page-item.active .page-link {
+    background-color: #145B73;
+    color: white;
+    border-color: #145B73;
+  }
+  
+  .custom-pagination .page-item.disabled .page-link {
+    color: #ccc;
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+  }
+
+  
+.button-lba-utama {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Pastikan elemen mengambil seluruh lebar */
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.button-danger-lba, .button-lba{
+    color: white;
+    border: none !important;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15vw;
+    height: 3rem;
+    font-family: 'Lora', serif Impo !important;
+    font-weight: bold !important;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 3rem;
+}
+
+.button-lba {
+    background-color: #145B73 !important;
+}
+
+.button-lba:hover {
+    background-color: #033444 !important;
+}
+
+.button-lba:active {
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button-danger-lba {
+    background-color: rgb(216, 8, 8) !important;
+}
+
+.button-danger-lba:hover {
+    background-color: rgb(151, 2, 2) !important;
+}
+
+.button-danger-lba:active {
+    background-color: rgb(151, 2, 2) !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.button-lba:active {
+    background-color: #033444 !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+  /* === Tablet === */
+@media (max-width: 1023px) {
+    
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.judul-detail-lba-2 {
+    font-family: 'Lora', serif !important;
+    font-size: 1.5em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.judul-detail-lba-1 img {
+    height: 15rem;
+}
+
+.komentar-lba h1 {
+    font-size: 1.2em !important;
+}
+
+
+.button-danger-lba, .button-lba{
+    width: 25vw;
+}
+
+}

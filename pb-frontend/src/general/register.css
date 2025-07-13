@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-family: "Lora", sans-serif !important;
+    font-weight: bold !important;
+}
+
+.form-signup {
+    width: 70vw;
+    /* Lebarkan ke seluruh layar */
+    max-width: 1200px;
+    /* Bisa diatur agar tidak terlalu besar */
+    height: auto;
+    margin: 15vh auto;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.kiri-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 20px;
+}
+
+.kiri-signup img {
+    width: 100%;
+}
+
+.kanan-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #BCE2EF;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-right: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.text-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-signup h1 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    padding: 5% 0 5% 0;
+    margin-top: 2vh;
+}
+
+.text-signup Form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-signup label {
+    font-size: 1em !important;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+.text-signup input {
+    margin-bottom: 3%;
+    height: 3rem;
+    font-family: 'Inter', serif;
+
+}
+
+.text-signup input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 0.8em;
+}
+
+.text-signup button {
+    background-color: #145B73;
+    color: white;
+    padding: 0 5vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5vh 0 5vh 0;
+    width: 40%;
+    height: 3rem;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    box-shadow: 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-signup button:hover {
+    background-color: #033444;
+}
+
+.text-signup button:active {
+    background-color: #033444 !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-login {
+    margin-bottom: 0;
+}
+
+.detail-text-login {
+    display: flex;
+    gap: 0.8vw;
+}
+
+.detail-text-login p {
+    font-family: 'Inter', serif;
+    font-size: 0.85em;
+    padding-top: 0;
+    color: black;
+    margin-bottom: 2vh;
+}
+
+.link-signup {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.link-signup:hover {
+    font-weight: bold;
+    color: #145B73;
+}
+
+.fp-admin {
+    color: black;
+    font-family: 'Inter', serif;
+    font-weight: bold;
+    font-size: 0.85em;
+    text-decoration: underline;
+}
+
+.fp-admin:hover {
+    color: #145B73;
+}
+
+.kembali {
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: absolute;
+    /* Agar elemen keluar dari aliran normal */
+    top: 0;
+    /* Sesuaikan agar tidak tertutup Navbar */
+    left: 0;
+    /* Posisi di sisi kanan */
+    z-index: 1000;
+}
+
+.kembali svg {
+    margin-right: 8px;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali p:hover {
+    color: #145B73;
+}
+
+.background {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kembali-user {
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    position: absolute;
+    /* Agar elemen keluar dari aliran normal */
+    top: 0;
+    /* Sesuaikan agar tidak tertutup Navbar */
+    left: 0;
+    /* Posisi di sisi kanan */
+    z-index: 1500;
+}
+
+.kembali-user svg {
+    margin-right: 0.5vw;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-user p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-user:hover {
+    color: #145B73;
+}
+
+.pesan-modal {
+    font-family: 'lora', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.modal-header h5 {
+    font-family: 'Lora', serif !important;
+    font-weight: bold;
+
+}
+
+.button-modal {
+    background-color: #145B73 !important;
+    width: 30% !important;
+    box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Inter', serif !important;
+    font-weight: bold;
+    border: none !important;
+}
+
+.button-modal:hover {
+    background-color: #033444 !important;
+}
+
+.button-modal:active {
+    box-shadow: inset 3px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.danger {
+    font-family: 'Inter', serif !important;
+    font-weight: bold;
+    border: none !important;
+    background-color: rgb(190, 7, 7) !important;
+    width: 30%;
+    box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.danger:hover {
+    background-color: rgb(151, 5, 5) !important;
+}
+
+.danger:active {
+    box-shadow: inset 3px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: none !important;
+    /* Hapus garis atas footer */
+}
+
+.footer-modal {
+    display: flex !important;
+    justify-content: space-between !important;
+    border-top: none !important;
+    /* Hapus garis atas footer */
+    margin: 25px 30px;
+}
+
+.modal-content {
+    background-color: #BCE2EF !important;
+    /* Ganti dengan warna yang diinginkan */
+    border-radius: 10px;
+    /* Opsional: Membuat sudut lebih lembut */
+    border: 2px outset #145B73 !important;
+    box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+
+    .text-signup h1 {
+        margin-top: 2vh;
+        font-size: 1.8em;
+    }
+
+    .text-signup label {
+    font-size: 0.85em !important;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+    .text-signup input {
+        height: 2.8rem;
+
+    }
+
+    .text-signup button {
+        width: 40%;
+        height: 2.8rem;
+    }
+
+    .detail-text-login p {
+        font-size: 0.8em;
+        margin-bottom: 2vh;
+    }
+
+    .fp-admin {
+        font-size: 0.8em;
+    }
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+    .kiri-signup {
+        display: none;
+    }
+
+    .text-signup label {
+    font-size: 0.75em !important;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+
+    .text-signup h1 {
+        font-size: 1.5em;
+    }
+
+    .text-signup input {
+        height: 2.5rem;
+
+    }
+
+    .text-signup input::placeholder {
+        font-size: 0.625em;
+    }
+
+    .text-signup button {
+        width: 40%;
+        height: 2.5rem;
+    }
+
+    .detail-text-login p {
+        font-size: 0.625;
+    }
+
+    .fp-admin {
+        font-size: 0.625em;
+    }
+
+    .kembali-user {
+        font-size: 0.8em;
+    }
+
+    .kembali-user p {
+        font-size: 0.8em;
+    }
+
+    .pesan-modal {
+        font-size: 1.2em;
+    }
+
+    .button-modal {
+    background-color: #145B73 !important;
+    width: 40% !important;
+    font-size: 0.8em !important;
+    box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Inter', serif !important;
+    font-weight: bold;
+    border: none !important;
+}
+
+.danger {
+    font-size: 0.8em !important;
+    font-family: 'Inter', serif !important;
+    font-weight: bold;
+    border: none !important;
+    background-color: rgb(190, 7, 7) !important;
+    width: 40%;
+    box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.2);
+}
+}

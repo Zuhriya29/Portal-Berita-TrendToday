@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.utama-info-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.utama-info-admin h1 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin: 2.5rem;
+    font-size: 1.7em;
+}
+
+.tambah-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #145B73;
+    border-radius: 10px;
+    width: 80vw;
+    height: 15rem;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tambah-admin p {
+    font-family: 'Inter', serif;
+    font-weight: bold;
+    color: #145B73;
+    margin-top: 1rem;
+}
+
+.tambah-admin:hover {
+    background-color: #BCE2EF;
+    cursor: pointer;
+}
+
+.tambah-admin:active {
+    box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-info-admin{
+    width: 50vw;
+    height: 3rem;
+    margin-top: 1rem;
+    border-radius: 25px;
+    border: 1px solid black;
+    display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: white;
+  position: relative;
+}
+
+.search-info-admin p {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.search-info-admin svg {
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.search-info-admin:hover {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-info-admin:active {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    font-size: 0.85em;
+    padding-left: 1rem;
+    
+  }
+
+.search-input input {
+    font-family: 'Inter', serif;
+  }
+  
+  .search-input::placeholder {
+    color: #888;
+  }
+  
+.admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 1rem;
+    background-color: #BCE2EF;
+    color: #145B73;
+    border-radius: 10px;
+    height: 15rem;
+    width: 20% !important;
+}
+
+.admin p {
+    font-family: 'Inter', serif;
+    font-weight: bold;   
+    margin-top: 1rem;
+}
+
+.admin:hover {
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.admin:active {
+    box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+    .admin {
+        width: 30% !important;
+    }
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+    .search-info-admin{
+    width: 80vw;
+    }
+
+    .admin {
+        width: 80% !important;
+    }
+
+}

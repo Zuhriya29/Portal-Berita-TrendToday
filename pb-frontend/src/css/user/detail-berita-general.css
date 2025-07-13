@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.atas-dbg {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.kembali-dbg, .icon-lihat-dbg{
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 0.85em;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    border: none !important;
+}
+
+.kembali-dbg svg, .icon-lihat-dbg svg{
+    margin-right: 0.8rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-dbg p, .icon-lihat-dbg p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.icon-lihat-dbg p {
+    text-decoration: none;
+}
+
+.kembali-dbg:hover {
+    color: #145B73;
+    cursor: pointer;
+}
+
+.suka{
+    margin-right: 1.5rem;
+}
+
+.suka:hover {
+    color: #D80808;
+    cursor: pointer;
+}
+
+.bagikan:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.judul-detail-dbg-1  {
+    flex-direction: column;
+}
+
+.judul-detail-dbg-2 {
+    font-family: 'Lora', serif !important;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.penulis-detail-dbg {
+    font-family: 'Inter', serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+}
+
+.judul-detail-dbg-1 img {
+    width: 100%;
+    height:35rem;
+    object-fit: cover; /* Gambar akan menyesuaikan tanpa distorsi */
+}
+
+.isi-utama-dbg{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.isi-berita-dbg {
+    padding: 3rem 1rem;
+    font-family: 'Inter', serif;
+    width: 70vw;
+    height: 100%;
+    font-size: 0.85em;
+}
+
+.isi-berita-dbg img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 50vw;
+    height: auto;
+    object-fit: cover; /* Gambar akan menyesuaikan tanpa distorsi */
+    object-position: center; /* Menjaga fokus di tengah gambar */
+    border-radius: 15px;
+}
+
+.iklan-dbg {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.iklan-dbg img{
+    margin-right: 0rem;
+    margin-left: 2rem;
+    width: 20vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+ .utama-komentar-dbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 8vw !important;
+  }
+
+  .utama-komentar-dbg h1 {
+      text-align : center;
+      padding-bottom : 3rem;
+      font-size: 1.8em ;
+  }
+
+.komentar-dbg {
+    margin: 0;
+}
+
+.komentar-teks-dbg {
+    font-family: 'Inter', serif;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    height: 5rem;
+    background-color: #BCE2EF;
+    padding: 1rem;
+    margin: 0.5rem 2rem;
+    border-radius: 10px;
+}
+
+.text-komentar {
+    font-weight: bold;
+    font-family: 'Inter', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px
+}
+
+.custom-pagination .page-link {
+    font-weight: bold;
+    font-family: 'Inter', serif;
+    color: #145B73;
+    border-color: #145B73;
+    margin: 0px 10px;
+    border-radius: 10px;
+  }
+  
+  .custom-pagination .page-item.active .page-link {
+    background-color: #145B73;
+    color: white;
+    border-color: #145B73;
+  }
+  
+  .custom-pagination .page-item.disabled .page-link {
+    color: #ccc;
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+  }
+
+.form-text-komentar label{
+    font-weight: bold;
+}
+
+.form-komentar-dbg{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.button-komentar-dbg {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.button-komentar-dbg button {
+  box-shadow: 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
+  width: 10rem;
+  background-color: #145B73;
+  border: none;
+  font-family: "Lora", sans-serif;
+  font-weight: bold;
+  padding: 0.8rem;
+}
+
+.button-komentar-dbg button:hover {
+  background-color: #033444;
+}
+
+.button-komentar-dbg button:active {
+  box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2) !important;
+  background-color: #033444 !important;
+}
+
+.berita-lainnya-dbg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.berita-lainnya-dbg h1 {
+  margin-bottom: 5rem;
+  font-size: 1.8em;
+}
+
+.elemen-berita-lainnya-dbg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.elemen-berita-lainnya-dbg:hover img,
+.elemen-berita-lainnya-dbg:hover .detail-berita-bawah-dbg {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.elemen-berita-lainnya-dbg:active img,
+.elemen-berita-lainnya-dbg:active .detail-berita-bawah-dbg {
+  box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.elemen-berita-lainnya-dbg img {
+  width: 100%;
+  height: 10rem;
+  border-radius: 5px 5px 0px 0px;
+  object-position: center;
+  /* Menjaga fokus di tengah gambar */
+  object-fit: cover !important;
+}
+
+.elemen-berita-lainnya-dbg h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85em !important;
+  font-family: 'Lora', serif !important;
+  font-weight: bold !important;
+  margin: 0px auto;
+}
+
+.detail-berita-bawah-dbg {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin: 0px auto;
+  background-color: #BCE2EF;
+  border-radius: 0px 0px 5px 5px;
+  width: 100%;
+  height: 6.5rem;
+  padding: 0px 10px;
+}
+
+.penulis-berita-depan-dbg {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  text-align: right;
+  font-family: 'Inter', serif;
+  font-size: 0.7em;
+}
+
+.footer {
+  background-color: #145B73;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10vh 13vw;
+  margin: auto;
+}
+
+.footer p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 0.8em;
+}
+
+.footer-medsos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.icon-medsos {
+  color: white;
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.icon-medsos svg:hover {
+   filter: drop-shadow(0 4px 6px #BCE2EF);
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  margin: 0;
+  gap: 5px;
+}
+
+.copy p {
+  line-height: 1;
+  /* pastikan line-height tidak terlalu besar */
+  margin: 0;
+  /* hilangkan margin default */
+  font-size: 0.8em;
+}
+
+.copy svg {
+ color: white;
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+
+.judul-detail-dbg-2 {
+    font-size: 1.8em;
+}
+
+.judul-detail-dbg-1 img {
+    height:25rem;
+  }
+
+.isi-berita-dbg {
+    padding: 3rem 2rem;
+}
+
+.isi-berita-dbg img{
+    width: 60vw;
+    height: auto;
+}
+
+.iklan-dbg {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.iklan-dbg img{
+    height: 10rem;
+    margin-top: 1.5rem;
+}
+
+  .utama-komentar-dbg h1 {
+      font-size: 1.5em ;
+  }
+
+.komentar-teks-dbg {
+    height: 3.5rem;
+    margin: 0.5rem 1.5rem;
+}
+
+.button-komentar-dbg {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.button-komentar-dbg button {
+  width: 8rem;
+}
+
+.button-komentar-dbg button:active {
+  box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2) !important;
+  background-color: #033444 !important;
+}
+
+.berita-lainnya-dbg h1 {
+  margin-bottom: 3rem;
+  font-size: 1.5em;
+}
+
+.elemen-berita-lainnya-dbg {
+  margin-bottom: 2rem;
+}
+
+.elemen-berita-lainnya-dbg h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85em !important;
+  font-family: 'Lora', serif !important;
+  font-weight: bold !important;
+  margin: 0px auto;
+}
+
+.detail-berita-bawah-dbg {
+  height: 7.5rem;
+}
+
+.penulis-berita-depan-dbg {
+  font-size: 0.7em;
+}
+
+
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+
+.icon-lihat-dbg p {
+    display: none;
+}
+
+.suka{
+    margin-right: 0.5rem;
+}
+
+.judul-detail-dbg-2 {
+    font-size: 1.5em;
+}
+
+.judul-detail-dbg-1 img {
+    height:20rem;
+}
+
+.isi-berita-dbg {
+    padding: 2rem 1rem;
+    width: 70vw;
+    font-size: 0.8em;
+}
+
+.isi-berita-dbg h1, 
+.isi-berita-dbg h2, 
+.isi-berita-dbg h3 {
+    width: 70vw;
+    font-size: 1.2em;
+}
+
+.isi-berita-dbg img{
+    width: 80vw;
+}
+
+.iklan-dbg {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.iklan-dbg img{
+    margin-right: 1rem;
+    margin-left: 0.3rem;
+    width: 25vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+  .utama-komentar-dbg h1 {
+      font-size: 1.5em ;
+  }
+
+.komentar-teks-dbg {
+    font-size: 0.8em;
+    width: 80vw;
+    height: 3.5rem;
+    padding: 0.8rem;
+    margin: 0.5rem 1rem;
+}
+
+.berita-lainnya-dbg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.berita-lainnya-dbg h1 {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-size: 1.8em;
+}
+
+.elemen-berita-lainnya-dbg {
+  margin-bottom: 2rem;
+}
+
+.elemen-berita-lainnya-dbg h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85em !important;
+  font-family: 'Lora', serif !important;
+  font-weight: bold !important;
+  margin: 0px auto;
+}
+
+.detail-berita-bawah-dbg {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin: 0px auto;
+  background-color: #BCE2EF;
+  border-radius: 0px 0px 5px 5px;
+  width: 100%;
+  height: 6.5rem;
+  padding: 0px 10px;
+}
+
+.penulis-berita-depan-dbg {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  text-align: right;
+  font-family: 'Inter', serif;
+  font-size: 0.7em;
+}
+
+.footer {
+  background-color: #145B73;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10vh 13vw;
+  margin: auto;
+}
+
+.footer p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 0.8em;
+}
+
+.footer-medsos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.icon-medsos {
+  color: white;
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.icon-medsos svg:hover {
+   filter: drop-shadow(0 4px 6px #BCE2EF);
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  margin: 0;
+  gap: 5px;
+}
+
+.copy p {
+  line-height: 1;
+  /* pastikan line-height tidak terlalu besar */
+  margin: 0;
+  /* hilangkan margin default */
+  font-size: 0.8em;
+}
+
+.copy svg {
+ color: white;
+}
+}

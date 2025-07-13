@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.kembali-da {
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    /* Agar elemen keluar dari aliran normal */
+    top: 0;
+    /* Sesuaikan agar tidak tertutup Navbar */
+    left: 0;
+    /* Posisi di sisi kanan */
+    z-index: 1000;
+}
+
+.kembali-da svg {
+    margin-right: 0.8rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-da p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-da p:hover {
+    color: #145B73;
+}
+
+.utama-da {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15vh auto;
+    background-color: #BCE2EF;
+    width: 70vw;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.utama-da h2 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    font-size: 1.5em !important;
+}
+
+.utama-da Form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.check-admin .form-check-input {
+    width: 2rem !important;
+    height: 1rem !important;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .check-admin .form-check-input label{
+    margin-left: 1rem;
+  }
+  
+  .check-admin .form-check-input:checked {
+    background-color: #145B73;
+  }
+
+.utama-da input {
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', serif;
+}
+
+.utama-da input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 0.7em;
+}
+
+.utama-da button {
+    background-color: #145B73;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15vw;
+    height: 2.5rem;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+.utama-da button:hover {
+    background-color: #033444;
+}
+
+.utama-da label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.button-da-utama {
+    display: flex;
+  justify-content: space-between;
+  width: 50vw; /* Pastikan elemen mengambil seluruh lebar */
+  font-size: 1em;
+}
+
+.button-danger-da {
+    background-color: rgb(216, 8, 8) !important;
+}
+
+.button-danger-da:hover {
+    background-color: rgb(151, 2, 2) !important;
+}
+
+.button-danger-da:active {
+    background-color: rgb(151, 2, 2) !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.button-da:active {
+    background-color: #033444 !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+    
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.utama-da button {
+    font-size: 0.8em;
+    width: 20vw;
+}
+
+}

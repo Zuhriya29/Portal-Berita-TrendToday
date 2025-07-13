@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.kembali-ta {
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    /* Agar elemen keluar dari aliran normal */
+    top: 0;
+    /* Sesuaikan agar tidak tertutup Navbar */
+    left: 0;
+    /* Posisi di sisi kanan */
+    z-index: 1000;
+}
+
+.kembali-ta svg {
+    margin-right: 0.8rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-ta p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-ta p:hover {
+    color: #145B73;
+}
+
+.utama-ta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem auto;
+    background-color: #BCE2EF;
+    width: 70vw;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.utama-ta h2 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    font-size: 1.5em !important;
+}
+
+.utama-ta Form {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.utama-ta input {
+    height: 3rem;
+    width: 60vw;
+    margin-bottom: 1rem;
+}
+
+.utama-ta input::placeholder {
+    font-family: 'Inter', serif;
+    font-size: 0.7em;
+}
+
+.utama-ta button {
+    background-color: #145B73;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15vw;
+    height: 2.5rem;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 2.5rem;
+}
+
+.utama-ta button:hover {
+    background-color: #033444;
+}
+
+.utama-ta button:active {
+    background-color: #033444 !important;
+    box-shadow: inset 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.utama-ta label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 1em !important;
+}
+
+.fpu-tambah-admin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.fp-tambah-admin input {
+    width: 29vw;
+}
+
+.fp-tambah-admin input,
+.utama-ta input {
+    font-family: 'Inter', serif !important;
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+     .utama-ta {
+        margin: 8rem auto;
+    }
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+    .fpu-tambah-admin {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .fp-tambah-admin input {
+        width: 60vw;
+    }
+
+    .utama-ta {
+        margin: 8rem auto;
+    }
+
+    .utama-ta h2 {
+        font-size: 1.3em !important;
+    }
+
+    .utama-ta label {
+        font-size: 0.85em !important;
+    }
+
+    .utama-ta input::placeholder {
+        font-size: 0.625em;
+    }
+
+    .utama-ta button {
+        width: 30vw;
+    }
+}

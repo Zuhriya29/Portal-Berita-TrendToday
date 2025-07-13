@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+  
+.atas-detail-validasi-berita {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kembali-dvb, .icon-detail-validasi-berita{
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.kembali-dvb svg, .icon-detail-validasi-berita svg{
+    margin-right: 0.8rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-dvb p, .icon-detail-validasi-berita p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.icon-detail-validasi-berita p {
+    text-decoration: none;
+}
+
+.icon-terima, .icon-danger {
+    padding: 1rem;
+  }
+
+  .icon-danger svg,
+.icon-terima svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-terima:hover {
+    color: green;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px 0 rgba(0.2, 0, 0, 0.2) ;
+    border-radius: 10px;
+}
+
+.icon-terima:active {
+    box-shadow: inset 3px 3px 0px 0 rgba(0.2, 0, 0, 0.2) ;
+}
+
+.icon-danger:hover {
+    color: rgb(151, 5, 5);
+    cursor: pointer;
+    box-shadow: 3px 3px 0px 0 rgba(0.2, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .icon-danger:active {
+    box-shadow: inset 3px 3px 0px 0 rgba(0.2, 0, 0, 0.2) ;
+}
+
+.kembali-dvb:hover {
+    color: #145B73;
+    cursor: pointer;
+}
+
+.judul-detail-vb-1  {
+    flex-direction: column;
+}
+
+.judul-detail-vb-2 {
+    font-family: 'Lora', serif !important;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+}
+
+.penulis-detail-vb {
+    font-family: 'Inter', serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+}
+
+.judul-detail-vb-1 img {
+    width: 100vw;
+    height: 30rem;
+    object-fit: cover; /* Gambar akan menyesuaikan tanpa distorsi */
+    object-position: center; /* Menjaga fokus di tengah gambar */
+}
+
+.isi-berita-dvb {
+    padding: 4rem 8rem;
+    font-family: 'Inter', serif;
+    font-size: 1em;
+}
+
+.isi-berita-dvb h1,
+.isi-berita-dvb h2,
+.isi-berita-dvb h3 {
+    font-size: 1.5em;
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+    .isi-berita-dvb {
+    padding: 2.5rem 4rem;
+}
+
+.judul-detail-vb-2 {
+    font-size: 1.8em;
+}
+
+.judul-detail-vb-1 img {
+    height: 20rem;
+}
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.icon-detail-validasi-berita p {
+ display: none;
+}
+
+.icon-terima, .icon-danger {
+    padding: 0rem;
+  }
+
+  .icon-detail-validasi-berita svg{
+    margin-right: 0rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.judul-detail-vb-1 img {
+    height: 15rem;
+}
+
+.judul-detail-vb-2 {
+    font-size: 1.5em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+    .isi-berita-dvb {
+    padding: 2.5rem 2.5rem;
+}
+}

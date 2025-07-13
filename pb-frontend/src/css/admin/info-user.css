@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.utama-info-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.utama-info-user h1 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin: 2.5rem;
+    font-size: 1.7em;
+}
+
+.search-info-user {
+    width: 50vw;
+    height: 3rem;
+    margin-top: 1rem;
+    border-radius: 25px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+
+.search-info-user p {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.search-info-user svg {
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.search-info-user:hover {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-info-user:active {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    font-size: 0.85em;
+    padding-left: 1rem;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 1rem;
+    background-color: #BCE2EF;
+    color: #145B73;
+    border-radius: 10px;
+    height: 15rem;
+    width: 20% !important;
+}
+
+.user p {
+    font-family: 'Inter', serif;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.user:hover {
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.user:active {
+    box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+    .user {
+        width: 30% !important;
+    }
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+    .user {
+        width: 80% !important;
+    }
+
+    .search-info-user {
+        width: 80vw;
+    }
+}

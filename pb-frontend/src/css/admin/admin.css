@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.utama-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.utama-admin h1 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    margin: 2.5rem;
+    font-size: 1.7em;
+}
+
+.utama-komponen-admin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    width: 80vw;
+}
+
+.per-komponen-admin {
+    justify-content: center;
+}
+
+.komponen-admin {
+    background-color: #BCE2EF;
+    width: 95%;
+    height: 8rem;
+    border-radius: 5px;
+    padding: 1vw;
+    margin: 2.5rem 1rem;
+     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
+     cursor: pointer;
+}
+
+.komponen-admin:hover {
+    background-color: #145B73;
+    color: white;
+}
+
+.header-komponen-admin{
+    font-family: 'Inter', serif;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 0.85em;
+}
+
+.value-komponen-admin {
+    font-family: 'Inter', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.garis-admin {
+    width: 80vw;
+    height: 0.8rem;
+    background-color: #145B73;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.utama-komponen-admin-2 {
+    width: 80vw;
+}

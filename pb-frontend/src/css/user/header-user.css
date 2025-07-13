@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.nav-custom {
+  background-color: #145B73;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+  color: white;
+}
+
+.nav-brand img {
+  width: 2.3rem;
+}
+
+.nav-brand {
+  padding-left: 3vw;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  color: white !important;
+  font-size: 1.3em !important;
+}
+
+.navbar-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  margin-top: 60px;
+}
+
+.nav-akun {
+  background-color: #145B73;
+  padding: 40px 0 20px;
+  width: 50vw;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+}
+
+.list-hu {
+  background-color: #BCE2EF;
+  padding: 40px 0 20px;
+  width: 50vw;
+  height: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 0 5px;
+  z-index: 1000;
+}
+
+.sidebar-hu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Dua kolom sejajar */
+  gap: 2rem;
+  /* Jarak antar elemen */
+  padding: 0;
+  justify-content: center;
+}
+
+.sidebar-hu .elemen {
+  width: 18vw;
+  height: 8rem;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  /* Agar border-radius bekerja */
+  padding: 0;
+  /* Hilangkan padding bawaan */
+}
+
+.elemen-link-hu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* pastikan isi vertikalnya rata */
+  gap: 5px;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  /* Tambahkan ini */
+  transition: background 0.2s ease;
+}
+
+.icon-wrapper-hu {
+  background-color: #145B73;
+  /* Hijau */
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper-hu svg {
+  width: 2.5rem !important;
+  height: 2.5rem;
+  fill: white;
+}
+
+.elemen-title-hu {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 3rem;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.elemen#active {
+  box-shadow: none;
+  /* Hapus shadow luar saat aktif */
+}
+
+/* Saat hover atau aktif */
+.elemen:hover .icon-wrapper-hu,
+.elemen#active .icon-wrapper-hu {
+  background-color: white;
+  box-shadow: inset 3px 3px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.elemen:hover .icon-wrapper-hu svg {
+  fill: #145B73;
+  /* Warna hijau gelap agar tetap terlihat di background putih */
+
+}
+
+.elemen#active .icon-wrapper-hu svg {
+  fill: #145B73;
+  /* Warna hijau gelap agar tetap terlihat di background putih */
+}
+
+.elemen:hover .elemen-title-hu,
+.elemen#active .elemen-title-hu {
+  background-color: #145B73;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.elemen-logout {
+  background-color: rgb(216, 8, 8) !important;
+  color: white;
+  width: 13vw;
+  height: 8rem;
+  cursor: pointer;
+}
+
+.icon-wrapper-logout-hu {
+  background-color: none;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.elemen-title-logout-hu {
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+  /* Agar border-radius bekerja */
+}
+
+/* Saat hover atau aktif */
+.elemen-logout:hover,
+.elemen-logout#active {
+  background-color: white !important;
+  color: rgb(216, 8, 8) !important;
+  box-shadow: inset 3px 3px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.elemen-logout:hover .elemen-title-logout-hu,
+.elemen-logout#active .elemen-title-logout-hu {
+  background-color: rgb(216, 8, 8);
+  color: white;
+}
+
+.akun-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* Ini yang memastikan ikon dan teks sejajar vertikal */
+  gap: 0.5rem;
+  cursor: pointer;
+  padding-right: 0.5vw;
+}
+
+.akun-header svg {
+  width: 2rem !important;
+  height: auto;
+}
+
+.akun-header p {
+  font-size: 1em;
+  margin: 0;
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+}
+
+.akun-header:hover,
+.akun-header.active {
+  color: #BCE2EF;
+}
+
+.elemen a {
+  text-decoration: none;
+  /* Menghilangkan garis bawah */
+  color: inherit;
+  /* Menggunakan warna teks default */
+  font-family: "Inter", sans-serif;
+}
+
+.elemen a p {
+  margin: 0;
+  /* Menghapus margin bawaan */
+  width: 230px;
+  height: 100%;
+}
+
+.edit-profil {
+  display: flex;
+  align-items: center;
+  /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+  color: white;
+  gap: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  position: absolute;
+  /* Agar elemen keluar dari aliran normal */
+  top: 0;
+  /* Sesuaikan agar tidak tertutup Navbar */
+  right: 0;
+  /* Posisi di sisi kanan */
+  z-index: 1000;
+}
+
+.edit-profil svg {
+  margin-right: 8px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.edit-profil p {
+  margin: 0;
+  /* Hilangkan margin default pada <p> */
+  font-family: 'Inter', serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.edit-profil:hover {
+  color: #BCE2EF;
+  cursor: pointer;
+}
+
+.akun-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.akun-user svg {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+.akun-user p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1em !important;
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+
+  .nav-brand img {
+    width: 2rem;
+  }
+
+  .navbar-2 {
+  margin-top: 55px;
+}
+
+.nav-akun {
+  width: 95vw;
+}
+
+.list-hu {
+  width: 95vw;
+}
+
+.sidebar-hu {
+  gap: 1.5rem;
+}
+
+.sidebar-hu .elemen {
+  width: 35vw;
+}
+
+.elemen-title-hu {
+  font-size: 0.85em;
+}
+
+.elemen-title-logout-hu {
+  font-size: 0.85em;
+}
+}

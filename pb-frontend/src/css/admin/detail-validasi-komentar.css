@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+  
+.atas-detail-validasi-komentar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kembali-dvk{
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+
+.kembali-dvk svg{
+    margin-right: 0.8rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-dvk p {
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-dvk:hover {
+    color: #145B73;
+    cursor: pointer;
+}
+
+.judul-dvk {
+    display: flex;
+    justify-content: center;
+    font-family: 'lora', serif;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    font-size: 2em;
+}
+
+.radio-group-dvk {
+    display: flex;
+    justify-content: start;
+    margin-top: 0.5rem;
+}
+
+.radio-buttons-dvk {
+    display: flex;
+    gap: 1.5rem; /* Beri jarak antara radio button */
+}
+
+.radio-buttons-dvk label {
+    font-family: 'Inter', serif;
+}
+
+.radio-buttons-dvk input[type="radio"] {
+    width: 1rem;  /* Pastikan ukuran proporsional */
+    height: 1rem; /* Ukuran harus sama agar tetap bulat */
+    appearance: none; /* Hilangkan default radio button */
+    border: 2px solid #145B73; /* Warna border */
+    border-radius: 50%; /* Pastikan bentuknya bulat */
+    outline: none; /* Hilangkan efek default */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+}
+
+.radio-buttons-dvk input[type="radio"]:checked {
+    background-color: #145B73; /* Warna saat dipilih */
+}
+
+.radio-buttons-dvk input[type="radio"]::after {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white; /* Warna titik tengah */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Default tersembunyi */
+}
+
+.radio-buttons-dvk input[type="radio"]:checked::after {
+    display: block; /* Munculkan titik saat dipilih */
+}
+
+.komntars-dvk-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.komentars-dvk-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-komentar-dvk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 0px;
+}
+
+.user-dvk {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nama-user-dvk {
+    font-family: 'Inter', serif;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 0.8em;
+}
+
+.komentar-dvk {
+    font-family: 'Inter', serif;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    height: 5rem;
+    background-color: #BCE2EF;
+    padding: 1.5rem;
+    margin: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.icon-detail-validasi-komentar {
+    display: "flex";
+    align-Items: "flex-start"; 
+    gap: 1rem; 
+}
+
+.icon-terima-dvk {
+    display: flex;
+    align-items: start;
+    margin: 0px auto;
+    line-height: 1;
+  }
+
+.icon-terima-dvk svg{
+    width: 2rem;
+  }
+
+.icon-terima-dvk p{
+    margin: 0;
+  }
+
+  .action-dvk p{
+    color: #145B73;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 0.85em;
+  }
+  .action-dvk:hover p{
+    text-decoration: underline;
+    color: black;
+  }
+
+    /* === Tablet === */
+@media (max-width: 1023px) {
+
+.radio-buttons-dvk {
+    margin-bottom: 1rem;
+}
+
+.radio-buttons-dvk label {
+    font-size: 0.85em;
+}
+
+.komentar-dvk {
+    width: 55vw;
+}
+
+.kembali-dvk{
+    margin-left: 1.5rem;
+}
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.judul-dvk {
+    margin-top: 3rem;
+}
+
+.radio-buttons-dvk {
+    display: flex;
+    flex-direction: column !important;
+    gap: 0.5rem; /* Beri jarak antara radio button */
+    margin-bottom: 1rem;
+}
+
+.radio-buttons-dvk label {
+    font-size: 0.85em;
+}
+
+.komentar-dvk {
+    width: 55vw;
+}
+
+.kembali-dvk{
+    margin-left: 1.5rem;
+}
+}

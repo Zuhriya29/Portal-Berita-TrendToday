@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.kembali-pencarian{
+    display: flex;
+    align-items: center;
+    /* Sejajarkan ikon dan teks ke tengah secara vertikal */
+    color: black;
+    /* Warna teks hitam */
+    font-size: 1em;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    border: none !important;
+}
+
+.kembali-pencarian svg{
+    margin-right: 0.5rem;
+    /* Beri jarak antara ikon dan teks */
+}
+
+.kembali-pencarian p{
+    margin: 0;
+    /* Hilangkan margin default pada <p> */
+    font-family: 'Inter', serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.kembali-pencarian:hover {
+    color: #145B73;
+    cursor: pointer;
+}
+
+
+.atas-pencarian {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.button-terapkan-pencarian {
+    background-color: #145B73 !important;
+    width: 50% !important;
+    box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Inter', serif !important;
+    font-weight: bold !important;
+    border: none !important;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: 1.5rem;
+    font-size: 1.2em !important;
+    cursor: pointer;
+}
+
+.button-terapkan-pencarian:hover {
+    background-color: #033444 !important;
+}
+
+.button-terapkan-pencarian:active {
+    box-shadow: inset 3px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button-kategori {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 2rem;
+    line-height: 1;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.button-kategori p {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0; 
+}
+
+.button-kategori:hover {
+    color: #145B73;
+    filter: drop-shadow( 5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.judul-kategori {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 1rem;
+}
+
+.judul-kategori p {
+    font-weight: bold !important;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2em;
+    margin: 0; 
+}
+
+.kategori-pencarian {
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #BCE2EF;
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0.8rem;
+    margin: 1rem 0.3rem;
+    cursor: pointer;
+    width: fit-content !important;
+}
+
+.kategori-pencarian:hover {
+  background-color: #1d87aa;
+  color: white; 
+}
+
+.kategori-pencarian.active {
+    box-shadow: inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: #145B73;
+  color: white; 
+}
+
+.judul-item-filter {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.search-pencarian {
+    width: 50vw;
+    height: 3rem;
+    border-radius: 25px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: white;
+    position: relative;
+}
+
+.search-pencarian p {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.search-pencarian svg {
+    margin: 0;
+    margin-left: 1.5rem;
+}
+
+.search-pencarian:hover {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-pencarian:active {
+    cursor: pointer;
+    border: 1px solid #145B73;
+    color: #145B73;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    font-size: 0.85em;
+    padding-left: 1rem;
+
+}
+
+.search-input input {
+    font-family: 'Inter', serif;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.elemen-berita-pencarian {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.elemen-berita-pencarian:hover img,
+.elemen-berita-pencarian:hover .detail-berita-bawah-pencarian {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.elemen-berita-pencarian:active img,
+.elemen-berita-pencarian:active .detail-berita-bawah-pencarian {
+  box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.elemen-berita-pencarian img {
+  width: 100%;
+  height: 10rem;
+  border-radius: 5px 5px 0px 0px;
+  object-position: center;
+  /* Menjaga fokus di tengah gambar */
+  object-fit: cover !important;
+}
+
+.elemen-berita-pencarian h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1em !important;
+  font-family: 'Lora', serif !important;
+  font-weight: bold !important;
+  margin: 0px auto;
+}
+
+.detail-berita-bawah-pencarian {
+ display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin: 0px auto;
+  background-color: #BCE2EF;
+  border-radius: 0px 0px 5px 5px;
+  width: 100%;
+  height: 9rem;
+  padding: 0px 10px;
+}
+
+.penulis-berita-depan-pencarian {
+  margin-top: 1.5rem;
+  margin-right: 0,5rem;
+  text-align: right;
+  font-family: 'Inter', serif;
+  font-size: 0.7em;
+}
+
+/* === Tablet === */
+@media (max-width: 1023px) {
+
+.elemen-berita-pencarian img {
+  width: 100%;
+  height: 8rem;
+  border-radius: 5px 5px 0px 0px;
+  object-position: center;
+  /* Menjaga fokus di tengah gambar */
+  object-fit: cover !important;
+}
+
+.elemen-berita-pencarian h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.9em !important;
+  font-family: 'Lora', serif !important;
+  font-weight: bold !important;
+  margin: 0px auto;
+}
+
+.detail-berita-bawah-pencarian {
+ display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin: 0px auto;
+  background-color: #BCE2EF;
+  border-radius: 0px 0px 5px 5px;
+  width: 100%;
+  height: 7.5rem;
+  padding: 0px 10px;
+}
+
+.penulis-berita-depan-pencarian {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  text-align: right;
+  font-family: 'Inter', serif;
+  font-size: 0.7em;
+}
+}
+
+/* === Mobile === */
+@media (max-width: 767px) {
+.button-terapkan-pencarian {
+    width: 40% !important;
+    font-size: 1em !important;
+}
+
+.atas-pencarian {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.search-pencarian {
+    width: 70vw;
+    margin-left: 8vw;
+}
+
+.button-kategori {
+    margin: 0px 0.8rem;
+}
+
+.button-kategori p {
+    margin: 0;
+    display: none;
+}
+
+.judul-kategori p {
+    font-size: 1em;
+}
+}
